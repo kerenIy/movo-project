@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0a4991b62f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdeliver.net/npm/axios/dist/axios.min.js"></script>
+    <title>Search Movies</title>
+  </head>
+  <body>
+    <section>
+      <div class="navigation flex justify-between items-center">
+        <p class="font-semibold text-2xl">movo</p>
+
+        <button id="menu-toggle"onclick="changeToggle()">
+          <img src="images/bars-solid.svg" alt="" class="menu-btn" />
+        </button>
+
+        <nav class="links">
+          <a href="">Home</a>
+          <a href="">Browse</a>
+          <a href="">FAQs</a>
+          <a href="">Categories</a>
+        </nav>
+
+      </div>
+    </section>
+    <!--search bar-->
+    <section class="search-component">
+      <h2>what are you interested in?</h2>
+      <p>
+        search movies and shows by genre, actors, year of release,
+        directors,etc.
+      </p>
+
+      <div class="search-box">
+        <form action="GET">
+          <p>Genre:</p>
+          <select name="genres_available" id="genre">
+            <option value="28">Action</option>
+            <option value="12">Adventure</option>
+            <option value="16">Animation</option>
+            <option value="35">Comedy</option>
+            <option value="80">Crime</option>
+
+            <option value="99">Documentary</option>
+            <option value="18">Drama</option>
+            <option value="10751">Family</option>
+            <option value="14">Fantasy</option>
+            <option value="36">History</option>
+
+            <option value="27">Horror</option>
+            <option value="9648">Mystery</option>
+            <option value="10749">Romance</option>
+            <option value="878">Sci/Fi</option>
+            <option value="53">Thriller</option>
+          </select>
+          <br><br>
+        </form>
+      </div>
+      <br />
+
+      <br /><br />
+      <button id="search"class="yellow-btn font-semibold" onclick="callMovies()">Search
+      </button>
+    </section>
+
+    <!--div to host movie recommendations-->
+    <section>
+      <div id="output">
+
+      </div>
+
+      <button id="next_btn" class="yellow-btn hide " onclick="nextMoviePage()">Next</button>
+    </section>
+
+    <!--back to home page & footer-->
+    <section class="footer">
+      <div>
+
+      <br><br><hr />
+
+      <div class="text-sm">
+        <div class="flex justify-between items-center py-3">
+          <p>Privacy Terms</p>
+          <p>movo &copy; 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

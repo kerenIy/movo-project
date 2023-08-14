@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0a4991b62f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--this is the hero section-->
+    <section class="header">
+      <div class="navigation flex justify-between items-center">
+        <p class="font-semibold text-2xl">movo</p>
+
+        <button id="menu-toggle">
+          <img src="images/bars-solid.svg" alt="" class="menu-btn" />
+        </button>
+
+        <nav id="mobile-links" class="links">
+          <a href="">Home</a>
+          <a href="">Browse</a>
+          <a href="">FAQs</a>
+          <a href="">My List</a>
+
+          <button class="nav-btn font-semibold">
+            <a href="search.html">Browse Movies</a>
+          </button>
+        </nav>
+      </div>
+
+      <div class="hero-section">
+        <div>
+          <h2 class="font-medium">Find your next favorite movie with Movo</h2>
+          <p>
+            Discover your perfect movie match with our comprehensive
+            recommendation platform. Movo is your trusted guide in finding the
+            next cinematic gem to delight your senses. Start your movie
+            adventure today!
+          </p>
+          <button class="hero-btn nav-btn font-semibold">
+            <a href="search.html">Start Search</a>
+          </button>
+        </div>
+
+        <img src="images/movo-display.png" alt="" class="hero-img" />
+      </div>
+    </section>
+
+    <!--this is the description section with the search component-->
+    <section class="browse">
+      <h2>Search from thousands of shows and movies</h2>
+      <button class="yellow-btn font-semibold">
+        <a href="search.html">Browse Movies</a>
+      </button>
+      <p>
+        We have a large range of movies and shows to ensure you never get bored
+        or overwhelmed looking for what next to watch
+      </p>
+    </section>
+
+    <!--three top categories for today section-->
+    <section class="categories">
+      <h2>Top 2023 Movies</h2>
+
+      <div class="movie-list">
+        <div class="movie-item">
+          <img src="images/thelittlemermaid.jpg" alt="" />
+          <h3>The Little Mermaid</h3>
+          <p>Fantasy, Musical</p>
+        </div>
+
+        <div class="movie-item">
+          <img src="images/spiderman.jpg" alt="" class="middle-img" />
+          <h3>Spiderman: Across The Spider Verse</h3>
+          <p>Animation, Sci/Fi, Action</p>
+        </div>
+
+        <div class="movie-item">
+          <img src="images/paulatreides.jpg" alt="" class="middle-img" />
+          <h3>Dune</h3>
+          <p>Adventure, Sci/Fi</p>
+        </div>
+      </div>
+      <br />
+
+      <button class="yellow-btn font-semibold ml-5">
+        <a href="search.html">See More</a>
+      </button>
+      <br /><br /><br />
+
+      <h2>Popular Shows</h2>
+      <div class="movie-list">
+        <div class="movie-item">
+          <img src="images/strangerthings.jpg" alt="" />
+          <h3>Stranger Things</h3>
+          <p>Drama, Horror</p>
+        </div>
+
+        <div class="movie-item">
+          <img src="images/wednesday.jpg" alt="" />
+          <h3>Wednesday</h3>
+          <p>Comedy, Drama</p>
+        </div>
+
+        <div class="movie-item">
+          <img src="images/bloodandwater.png" alt="" class="middle-img2" />
+          <h3>Blood & Water</h3>
+          <p>Drama</p>
+        </div>
+      </div>
+      <br />
+
+      <button class="yellow-btn font-semibold ml-5">
+        <a href="search.html">See More</a>
+      </button>
+    </section>
+
+    <!--faq section-->
+    <section class="faq">
+      <br /><br />
+      <h2 class="py-5 font-semibold capitalize text-center text-2xl">
+        Frequently asked questions
+
+        <span class="questions">GOT QUESTIONS?</span>
+      </h2>
+      <br /><br />
+      <div class="faq-box">
+        <div class="flex justify-between items-center faq-item">
+          <p class="inline">Can I stream series on Movo?</p>
+          <span class="inline"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <br /><br />
+
+        <div class="flex justify-between items-center faq-item">
+          <p class="inline">Are Netflix shows on Movo?</p>
+          <span class="inline"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <br /><br />
+
+        <div class="flex justify-between items-center faq-item">
+          <p class="inline">How can I browse movies?</p>
+          <span class="inline"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <br /><br />
+
+        <div class="flex justify-between items-center faq-item">
+          <p class="inline">What shows and movies are available?</p>
+          <span class="inline"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <!--footer section & notes-->
+    <section class="footer">
+      <div><p class="font-semibold text-2xl">movo</p></div>
+
+      <div>
+        <div class="grid justify-center items-center text-center text-md p-3">
+          <ul>
+            <li class="py-2">Browse</li>
+            <li class="py-2">Contact</li>
+            <li class="py-2">Developers</li>
+            <li class="py-2">Privacy Policy</li>
+          </ul>
+        </div>
+        <br />
+      </div>
+      <br />
+
+      <hr />
+
+      <div class="text-sm">
+        <div class="flex justify-between items-center py-3">
+          <p>Privacy Terms</p>
+          <p>movo &copy; 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
